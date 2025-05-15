@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
+
 *{
     padding: 0;
     margin: 0;
@@ -16,6 +18,7 @@
     justify-content: space-between;
     color: #2C2046;
     margin-inline: 78px;
+    font-size: 1.1rem;
 }
 
 .header_img{
@@ -27,7 +30,7 @@
 .nav_list{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 10px;
 }
 
 .nav_item{
@@ -71,10 +74,10 @@
 
 .footer{
     margin-inline: 78px;
-    background-color: #2C2046;
+    background-color: #2C2046 !important;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    padding: 0px 88px;
+    padding: 0px 88px !important;
     color: white ;
     
 }
@@ -106,7 +109,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    margin-top: 1%;
+    margin-top: 1% !important;
     gap: 20px;
 }
 
@@ -123,7 +126,7 @@
 
 .footer_contato_text-contato{
     text-align: center;
-    background: #7B58C2;
+    background: #7B58C2 ;
     width: 40%;
     padding: 5px 5px;
     border-radius: 10px;
@@ -160,5 +163,16 @@
 .footer_contato_text{
     color: white;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
+
+@media (max-width: 1259px) {
+    .header{
+        display: none;
+    }
+
+    
+    
+}
+
+
