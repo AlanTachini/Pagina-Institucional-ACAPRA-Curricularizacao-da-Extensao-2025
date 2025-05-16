@@ -166,13 +166,87 @@
     font-size: 1.2rem;
 }
 
-@media (max-width: 1259px) {
-    .header{
-        display: none;
-    }
 
-    
-    
+.footerMobile{
+    display: none;
 }
 
+@media screen and (max-width: 1000px) {
+    .footer{
+        display: none;
+    }
+    .footerMobile{
+    display: block;
+    background-color: #2C2046 !important;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 0px 88px !important;
+    color: white ;
+    }
 
+    .footer_containerMobile{
+        text-align: center;
+        margin-top: 20px;
+        margin-top: 1% !important;
+        gap: 20px;
+    }
+
+    .footer_contatoMobile{
+        margin-top: 20px;
+    }
+
+    .footer_contato_formMobile{
+        margin: 0 auto;
+        background-color: #292A32;
+        max-width: 320px;
+        width: 100%;
+        padding: 24px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .footer_contato_form-form-inputMobile{
+        background: #292A32;
+        border: 2px solid white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        max-width: 100%;
+
+    }
+
+    .footer_contato_form-form-buttonMobile{
+    background: #7B58C2;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 0;
+    margin: 0 auto;
+    display: block;
+    }
+
+    .footer_contato_form-form-inputMobile,
+.footer_contato_form-form-buttonMobile {
+    padding: 10% 10%;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+}
+
+.footer_contato_text-contatoMobile{
+    margin: 0 auto;
+    background: #7B58C2 ;
+    width: 150px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 30px !important;
+}
+}
