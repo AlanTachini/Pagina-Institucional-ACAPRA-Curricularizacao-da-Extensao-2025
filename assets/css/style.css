@@ -26,7 +26,6 @@
     height: 20px;
 }
 
-
 .nav_list{
     display: flex;
     flex-wrap: wrap;
@@ -53,9 +52,6 @@
 
 }
 
-
-
-
 .nav_item-buttom{
 
     border: 2px solid #2C2046;
@@ -65,9 +61,72 @@
 
 }
 
-
 .nav_item a:visited, .nav_item-buttom a:visited {
     color: inherit; 
+}
+
+/* Menu Hamburguer do header */
+.header_hamburger {
+  display: none;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+.nav_burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1001;
+}
+
+.nav_burger span {
+  height: 4px;
+  width: 100%;
+  background: #2C2046;
+  margin-bottom: 6px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav_mobile {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 16px;
+  background: #2C2046;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.nav_list-mobile {
+  list-style: none;
+  padding: 16px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav_list-mobile .nav_item {
+  padding: 10px 32px;
+  text-align: left;
+}
+
+.nav_list-mobile .nav_item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav_toggle:checked ~ .nav_mobile {
+  display: block;
 }
 
 /* footer */
@@ -106,7 +165,7 @@
 
 .footer_contato{
     display: flex;
-    justify-content: space-between;
+    justify-content: center; ;
     align-items: center;
     margin-top: 20px;
     margin-top: 1% !important;
@@ -121,8 +180,8 @@
     text-align: center !important;
     align-items: center !important;
     justify-content: center;
+    margin: 0 auto;
 }
-
 
 .footer_contato_text-contato{
     text-align: center;
@@ -133,15 +192,13 @@
     font-size: 1.3rem;
 }
 
-
-
 .footer_contato_form-form-input{
+
     background: #292A32;
     margin-right: 16px;
     border: 2px solid white;
     border-radius: 5px;
     margin-bottom: 20px;
-    max-width: 100%;
     padding: 30px;
 
 }
@@ -165,7 +222,6 @@
     text-align: left;
     font-size: 1.2rem;
 }
-
 
 .footerMobile{
     display: none;
@@ -248,5 +304,16 @@
     border-radius: 10px;
     font-size: 1.2rem;
     margin-top: 30px !important;
+}
+
+/* Esconde menu desktop e mostra hamburguer no mobile */
+@media (max-width: 1250px) {
+  .header {
+    display: none;
+  }
+  .header_hamburger {
+    display: block;
+    position: relative;
+  }
 }
 }
