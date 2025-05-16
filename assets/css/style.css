@@ -19,6 +19,7 @@
     color: #2C2046;
     margin-inline: 78px;
     font-size: 1.1rem;
+    margin-bottom: 60px;
 }
 
 .header_img{
@@ -129,7 +130,81 @@
   display: block;
 }
 
+
+
+
+
+/* secao introducao */
+
+.SecaoIntroducao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 78px;
+    margin-top: 20px;
+}
+
+.SecaoIntroducao h1{
+    font-size: 3rem;
+    color: #2C2046;
+    margin-top: -15%;
+}
+
+.SecaoIntroducao button{
+    background: #7B58C2;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 20px 40px;
+}
+
+.SecaoIntroducao img{
+    height: 400px;
+    margin-top: -5%;
+    margin-right: 60px !important;
+}
+
+
+/* divisao */
+.divi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 78px;
+    margin-top: 5%;
+    height: 60px;
+}
+
+/* noticias */
+.notice{
+    margin-inline: 78px;    
+}
+
+.notice h1{
+    font-size: 2.5rem;
+    color: #2C2046;
+    
+}
+
+/* perguntas frequentes */
+.accordion{
+    align-items: center;
+    margin-inline: 78px;
+    margin-top: 5%;
+}
+
+.questionFrequentl{
+    font-size: 2.5rem;
+    color: #2C2046;
+    margin-inline: 78px;
+}
 /* footer */
+
+
+
+
 
 .footer{
     margin-inline: 78px;
@@ -306,14 +381,4 @@
     margin-top: 30px !important;
 }
 
-/* Esconde menu desktop e mostra hamburguer no mobile */
-@media (max-width: 1250px) {
-  .header {
-    display: none;
-  }
-  .header_hamburger {
-    display: block;
-    position: relative;
-  }
-}
 }
