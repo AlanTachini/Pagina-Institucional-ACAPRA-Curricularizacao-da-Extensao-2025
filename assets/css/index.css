@@ -1,3 +1,5 @@
+
+
 /* secao introducao */
 
 .SecaoIntroducao{
@@ -39,6 +41,17 @@
     margin-inline: 78px;
     margin-top: 5%;
     height: 60px;
+}
+
+/* não aos maus tratos */
+.sayno{
+    margin-inline: 78px;
+
+}
+
+.sayno h1{
+    font-size: 2.5rem;
+    color: #2C2046;
 }
 
 /* noticias */

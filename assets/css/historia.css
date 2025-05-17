@@ -1,0 +1,54 @@
+@import "fonts.css";
+:root {
+    --color_purple: #7B58C2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: space-grotesk, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.TitlePurple {
+    background-color: var(--color_purple);
+    border-radius: 8px;
+    padding: 0px 16px 0px 16px;
+}
+
+.FlexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Height48 {
+    height: 48px;
+}
+
+.BgColorPurple {
+    background-color: var(--color_purple);
+}
+
+.Margin16 {
+    margin: 16px;
+}
+
+.MarginTop16 {
+    margin-top: 16px;
+}
+
+.MarginRight16 {
+    margin-right: 16px;
+}
+
+.MarginLeft16 {
+    margin-left: 16px;
+}
+
+.MarginBottom16 {
+    margin-bottom: 16px;
+}
