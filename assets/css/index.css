@@ -32,17 +32,6 @@
     margin-right: 60px !important;
 }
 
-
-/* divisao */
-.divi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 78px;
-    margin-top: 5%;
-    height: 60px;
-}
-
 /* não aos maus tratos */
 .sayno{
     margin-inline: 78px;
