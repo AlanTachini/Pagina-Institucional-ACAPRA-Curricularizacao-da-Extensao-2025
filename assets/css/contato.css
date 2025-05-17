@@ -1,14 +1,54 @@
-/* donation */
-.donation h1 {
+.contact_title {
+    font-size: 2.5rem;
     margin-inline: 78px;
-    font-size: 3rem;
     color: #2C2046;
+    margin-top: -3%;
 }
 
-.donation img {
-    width: 65%;
-    margin:  0 50%;
-    transform: translateX(-50%);
-    margin-top: 5%;
-    margin-bottom: 5%;
+.contact_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 78px;
+    margin-top: -6%;
 }
+
+.contact_container-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+    
+}
+.contact img{
+    height: 800px;
+    margin-right: 70px;
+}
+
+.contact_container-form-label{
+    font-size: 1.2rem;
+    color: #2C2046;
+    font-weight: 50;
+}
+
+
+.contact_container-form-input{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 30px;
+    padding: 10px;
+}
+
+.contact_container-form-button{
+    background: #7B58C2;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    margin-top: 10px;
+    width: 100%;
+}
+

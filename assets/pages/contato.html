@@ -17,100 +17,123 @@
 </head>
 
 <body>
-  <header class="header">
-    <img class="header_img1" src="/assets/img/logoacapraroxa.png" alt="logoacapra">
-    <nav class="header_nav">
-      <ul class="nav_list">
-        <a href="/assets/index.html"><li class="nav_item">Home</li></a>
-        <a href="/assets/pages/historia.html"><li class="nav_item">Nossa História</li></a>
-        <a href="/assets/pages/doacao.html"><li class="nav_item">Doação</li></a>
-        <a href="/assets/pages/estatistica.html"><li class="nav_item">Estatística</li></a>
-        <a href="/assets/pages/animais_adotados.html"><li class="nav_item">Animais Adotados</li></a>
-        <a href="/assets/pages/maus_tratos.html"><li class="nav_item">Maus-tratos</li></a>
-        <a href="/assets/pages/contato.html"><li class="nav_item nav_item-buttom">Contato</li></a>
-      </ul>
-    </nav>
-  </header>
+    <header class="header">
+        <img class="header_img1" src="/assets/img/logoacapraroxa.png" alt="logoacapra">
+        <nav class="header_nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="/assets/index.html">Home</a></li>
+                <li class="nav_item"><a href="/assets/pages/historia.html">Nossa História</a></li>
+                <li class="nav_item"><a href="/assets/pages/doacao.html">Doação</a></li>
+                <li class="nav_item"><a href="/assets/pages/estatistica.html">Estatística</a></li>
+                <li class="nav_item"><a href="/assets/pages/animais_adotados.html">Animais Adotados</a></li>
+                <li class="nav_item"><a href="/assets/pages/maus_tratos.html">Maus-tratos</a></li>
+                <li class="nav_item nav_item-buttom"><a href="/assets/pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section></section>
+    <section class="contact">
+        <h1 class="contact_title">Contato</h1>
+        <div class="contact_container">
+            <div class="contact_container-form">
+                <form action="">
+                    <label for="name">Nome</label><br>
+                    <input type="text" placeholder="Nome" id="name" class="contact_container-form-input"><br><br>
+                    <label for="email-contato">Email*</label><br>
+                    <input type="email" placeholder="Email" id="email-contato" class="contact_container-form-input"
+                        required><br><br>
+                    <label for="message">Mensagem*</label><br>
+                    <textarea name="message" id="message" rows="4" cols="35" class="contact_container-form-input"
+                        required></textarea><br>
 
-  <br>
-  <footer class="footer">
-    <div class="footer_container">
-      <div class="footer_img">
-        <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1">
+                    <input type="submit" value="Enviar sua Mensagem" class="contact_container-form-button">
+                </form>
+            </div>
+            <div>
+                <img src="/assets/assets/img/pngegg (8).png" alt="cachorroContato">
+            </div>
 
-        <a href="https://www.instagram.com/" target="_blank"><img src="/assets/img/instagram_logo_thin_icon_171701.png"
-            alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
-            class="footer_img_instagram"></a>
-      </div>
-      <div class="footer_contato">
-        <div class="footer_contato_text">
-          <p class="footer_contato_text-contato">Nos contate:
-          <p>
+        </div>
+    </section>
+
+    <br>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_img">
+                <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1">
+
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="/assets/img/instagram_logo_thin_icon_171701.png"
+                        alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
+                        class="footer_img_instagram"></a>
+            </div>
+            <div class="footer_contato">
+                <div class="footer_contato_text">
+                    <p class="footer_contato_text-contato">Nos contate:</p>
+                    <br>
+                    <p>Nome: Kelly Caroline de Menezes</p>
+                    <br>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <br>
+                    <p>Localização dos animais: Lares temporários</p>
+
+                </div>
+                <div class="footer_contato_form">
+                    <form action="#" class="footer_newsletter_form">
+                        <input type="email" name="email" id="email-footer" placeholder="Email"
+                            class="footer_newsletter_input">
+                        <input type="submit" value="Receber notícias" class="footer_newsletter_button">
+                    </form>
+                </div>
+            </div>
+            <br><br>
+            <hr class="footer_line">
+            <br><br>
+            <div class="footer_copy">
+                <p>&copy; 2025 Associação brusquense de proteção aos animais - ACAPRA . All Rights Reserved.</p>
+            </div>
+            <br><br>
+        </div>
+    </footer>
+
+    <footer class="footerMobile">
+        <div class="footer_containerMobile">
+            <div class="footer_img">
+                <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1">
+
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="/assets/img/instagram_logo_thin_icon_171701.png"
+                        alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
+                        class="footer_img_instagram"></a>
+            </div>
+            <div class="footer_contato_form">
+                <form action="#" class="footer_newsletter_form">
+                    <input type="email" name="email" id="email-footer-mobile" placeholder="Email"
+                        class="footer_newsletter_input"><br>
+                    <input type="submit" value="Receber notícias" class="footer_newsletter_button">
+                </form>
+            </div>
+            <div class="footer_contatoMobile">
+                <div class="footer_contato_text">
+                    <p class="footer_contato_text-contato">Nos contate:</p>
+                    <br>
+                    <p>Nome: Kelly Caroline de Menezes</p>
+                    <br>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <br>
+                    <p>Localização dos animais: Lares temporários</p>
+
+                </div>
+            </div>
             <br>
-          <p>Nome: Kelly Caroline de Menezes</p>
-          <br>
-          <p>Telefone: (11) 1234-5678</p>
-          <br>
-          <p>Localização dos animais: Lares temporários</p>
-
-        </div>
-        <div class="footer_contato_form">
-          <form action="#" class="footer_contato_form-form">
-            <input type="email" name="email" id="email" placeholder="Email" class="footer_contato_form-form-input">
-            <input type="submit" value="Receber notícias" class="footer_contato_form-form-button">
-          </form>
-        </div>
-      </div>
-      <br><br>
-      <hr class="footer_line">
-      <br><br>
-      <div class="footer_copy">
-        <p>&copy; 2025 Associação brusquense de proteção aos animais - ACAPRA . All Rights Reserved.</p>
-      </div>
-      <br><br>
-    </div>
-  </footer>
-
-  <footer class="footerMobile">
-    <div class="footer_containerMobile">
-      <div class="footer_img">
-        <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1Mobile">
-
-        <a href="https://www.instagram.com/" target="_blank"><img src="/assets/img/instagram_logo_thin_icon_171701.png"
-            alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
-            class="footer_img_instagram"></a>
-      </div>
-      <div class="footer_contato_formMobile">
-        <form action="#" class="footer_contato_form-formMobile">
-          <input type="email" name="email" id="email" placeholder="Email"
-            class="footer_contato_form-form-inputMobile"><br>
-          <input type="submit" value="Receber notícias" class="footer_contato_form-form-buttonMobile">
-        </form>
-      </div>
-      <div class="footer_contatoMobile">
-        <div class="footer_contato_textMobile">
-          <p class="footer_contato_text-contatoMobile">Nos contate:
-          <p>
+            <hr class="footer_lineMobile">
             <br>
-          <p>Nome: Kelly Caroline de Menezes</p>
-          <br>
-          <p>Telefone: (11) 1234-5678</p>
-          <br>
-          <p>Localização dos animais: Lares temporários</p>
-
+            <div class="footer_copyMobile">
+                <p>&copy; 2025 Associação brusquense de proteção aos animais - ACAPRA . All Rights Reserved.</p>
+            </div>
+            <br><br>
         </div>
-      </div>
-      <br>
-      <hr class="footer_lineMobile">
-      <br>
-      <div class="footer_copyMobile">
-        <p>&copy; 2025 Associação brusquense de proteção aos animais - ACAPRA . All Rights Reserved.</p>
-      </div>
-      <br><br>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
