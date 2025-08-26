@@ -8,8 +8,8 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/contato.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contato.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
   <title>Acapra</title>
@@ -18,40 +18,37 @@
 
 <body>
     <header class="header">
-        <img class="header_img1" src="/assets/img/logoacapraroxa.png" alt="logoacapra">
+        <img class="header_img1" src="../img/LogoAcapraRoxo.png" alt="Logo ACAPRA">
         <nav class="header_nav">
             <ul class="nav_list">
-                <li class="nav_item"><a href="/assets/index.html">Home</a></li>
-                <li class="nav_item"><a href="/assets/pages/historia.html">Nossa História</a></li>
-                <li class="nav_item"><a href="/assets/pages/doacao.html">Doação</a></li>
-                <li class="nav_item"><a href="/assets/pages/estatistica.html">Estatística</a></li>
-                <li class="nav_item"><a href="/assets/pages/animais_adotados.html">Animais Adotados</a></li>
-                <li class="nav_item nav_item-buttom"><a href="/assets/pages/contato.html">Contato</a></li>
+                <li class="nav_item"><a href="../../index.html">Home</a></li>
+                <li class="nav_item"><a href="historia.html">Nossa História</a></li>
+                <li class="nav_item"><a href="doacao.html">Doação</a></li>
+                <li class="nav_item"><a href="estatistica.html">Estatística</a></li>
+                <li class="nav_item"><a href="animais_adotados.html">Animais Adotados</a></li>
+                <li class="nav_item nav_item-buttom"><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="contact">
-        <h1 class="contact_title">Contato</h1>
+        <h1 class="space-grotesk-h1 color-black">Contato</h1>
         <div class="contact_container">
-            <div class="contact_container-form">
-                <form action="">
-                    <label for="name">Nome</label><br>
+            <div class="contact_container-form padding-24">
+                <form action="#">
+                    <label for="name" class="space-grotesk-h3 color-black">Nome</label><br>
                     <input type="text" placeholder="Nome" id="name" class="contact_container-form-input"><br><br>
-                    <label for="email-contato">Email*</label><br>
+                    <label for="email-contato" class="space-grotesk-h3 color-black">Email*</label><br>
                     <input type="email" placeholder="Email" id="email-contato" class="contact_container-form-input"
                         required><br><br>
-                    <label for="message">Mensagem*</label><br>
-                    <textarea name="message" id="message" rows="4" cols="35" class="contact_container-form-input"
+                    <label for="message" class="space-grotesk-h3 color-black">Mensagem*</label><br>
+                    <textarea name="message" id="message" rows="4" cols="35" class="contact_container-form-textarea" placeholder="Escreva sua mensagem..."
                         required></textarea><br>
 
-                    <input type="submit" value="Enviar sua Mensagem" class="contact_container-form-button">
+                    <input type="submit" value="Enviar sua mensagem" class="contact_container-form-button space-grotesk-thin">
                 </form>
             </div>
-            <div>
-                <img src="/assets/img/pngegg (8).png" alt="cachorroContato">
-            </div>
-
+            <img src="../img/CachorroContato.png" alt="Cachorro Contato" id="imagem-cachorro-contato">
         </div>
     </section>
 
@@ -59,10 +56,10 @@
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_img">
-                <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1">
+                <img src="../img/LogoAcapraRoxo.png" alt="Logo Acapra" class="footer_img1">
 
                 <a href="https://www.instagram.com/" target="_blank"><img
-                        src="/assets/img/instagram_logo_thin_icon_171701.png"
+                        src="../img/instagram_logo_thin_icon_171701.png"
                         alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
                         class="footer_img_instagram"></a>
             </div>
@@ -98,10 +95,10 @@
     <footer class="footerMobile">
         <div class="footer_containerMobile">
             <div class="footer_img">
-                <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1">
+                <img src="../img/LogoAcapraRoxo.png" alt="logoacapra" class="footer_img1">
 
                 <a href="https://www.instagram.com/" target="_blank"><img
-                        src="/assets/img/instagram_logo_thin_icon_171701.png"
+                        src="../img/instagram_logo_thin_icon_171701.png"
                         alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
                         class="footer_img_instagram"></a>
             </div>
