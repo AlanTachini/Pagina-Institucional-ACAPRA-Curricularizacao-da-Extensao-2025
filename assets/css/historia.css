@@ -3,6 +3,29 @@
     --color_purple: #7B58C2;
 }
 
+/* até 1024px */
+@media (max-width: 1024px) {
+    .DividerAnimais {
+        display: none;
+    }
+
+    .Container_Imagem {
+        display: none !important;
+    }
+
+    .Container_Texto {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ContainerPrincipal {
+        padding-inline: 16px !important;
+    }
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +33,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
 }
 
 .TitlePurple {
@@ -51,4 +73,20 @@
 
 .MarginBottom16 {
     margin-bottom: 16px;
+}
+
+.Container_MissaoVisaoValores {
+    display: flex;
+}
+
+.Container_Imagem {
+    width: 50%;
+}
+
+.Container_Texto {
+    width: 50%;
+}
+
+.ContainerPrincipal {
+    padding-inline: 80px;
 }
