@@ -1,14 +1,20 @@
 /* donation */
-.donation h1 {
-    margin-inline: 78px;
-    font-size: 2.5rem;
-    color: #2C2046;
+.ContainerPrincipal {
+    padding-inline: 80px;
 }
 
-.donation img {
-    width: 65%;
-    margin:  0 50%;
-    transform: translateX(-50%);
-    margin-top: 5%;
-    margin-bottom: 5%;
+@media (max-width: 768px) {
+    .ContainerPrincipal {
+        padding-inline: 16px !important;
+    }
+}
+
+.ImagemDoacao {
+    margin-top: 16px;
+}
+
+.FlexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
