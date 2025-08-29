@@ -1,3 +1,6 @@
+.statistic_container-text h1 {
+    color: #3CB371;
+}
 @import "fonts.css";
 /* info */
 
@@ -7,6 +10,7 @@
     /* margin-inline: 78px; */
     color: white;
     padding: 20px;
+    margin-top: 130px !important;
 }
 
 .info_general{
@@ -23,7 +27,7 @@
 }
 
 .info h1{
-    font-size: 1.7rem;
+    color: white;
 }
 
 /* statistic */
@@ -39,16 +43,31 @@
 }
 
 .statistic_container-text{
+    font-family: "Space Grotesk", sans-serif;
     width: 500px;
     padding: 20px;
     margin: 2px;
     background-color: #7B58C2;
-    color: yellowgreen;
+    color: #111;
     text-align: center;
     margin-bottom: 5%;
-    font-size: 2rem;
     border-radius: 10px;
+        width: 420px;
+        min-width: 220px;
+        max-width: 95%;
+        padding: 32px 20px;
+        margin: 12px;
+        border-radius: 22px;
+        box-shadow: 0 4px 24px rgba(44,32,70,0.13), 0 1.5px 6px rgba(123,88,194,0.10);
+        border: 2px solid #fff;
+        transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
+
+    .statistic_container-text:hover {
+        box-shadow: 0 10px 32px rgba(44,32,70,0.22);
+        border-color: #BFA8E2;
+        transform: translateY(-6px) scale(1.03);
+    }
 
 
 

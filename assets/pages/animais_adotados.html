@@ -13,44 +13,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
   <title>Acapra</title>
+  <script src="/assets/js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header class="header">
-    <img class="header_img1" src="../img/LogoAcapraRoxo.png" alt="logoacapra">
-    <nav class="header_nav">
+    <a href="/assets/index.html"><img class="header_img1" src="/assets/img/logoacapraroxa.png" alt="logoacapra"></a>
+    <nav class="header_nav active">
+      <span class="menu-item" onclick="abrirMenuHamburguer()">☰</span>
       <ul class="nav_list">
-        <a href="../../index.html">
+        <a href="/assets/index.html">
           <li class="nav_item">Home</li>
         </a>
-        <a href="historia.html">
+        <a href="/assets/pages/historia.html">
           <li class="nav_item">Nossa História</li>
         </a>
-        <a href="doacao.html">
+        <a href="/assets/pages/doacao.html">
           <li class="nav_item">Doação</li>
         </a>
-        <a href="estatistica.html">
+        <a href="/assets/pages/estatistica.html">
           <li class="nav_item">Estatística</li>
         </a>
-        <a href="animais_adotados.html">
+        <a href="/assets/pages/animais_adotados.html">
           <li class="nav_item">Animais Adotados</li>
         </a>
-        <a href="contato.html">
+        <a href="/assets/pages/contato.html">
           <li class="nav_item nav_item-buttom">Contato</li>
         </a>
       </ul>
     </nav>
+
   </header>
 
   <section class="adopted ContainerPrincipal">
-    <h1 class="space-grotesk-h1">Animais Adotados</h1>
+  <h1 class="space-grotesk-h1 font_h1">Animais Adotados</h1>
     <div class="adopted_container">
       <div>
         <img src="../img/WhatsApp Image 2025-03-18 at 21.04.52.jpeg" alt="cachorroRex">
       </div>
       <div>
-        <p class="font_p">Rex chegou à ACAPRA após ser encontrado vagando pelas ruas. Seu olhar doce escondia um passado difícil, mas
+        <p class="font_p font_p">Rex chegou à ACAPRA após ser encontrado vagando pelas ruas. Seu olhar doce escondia um passado difícil, mas
           sua personalidade alegre logo conquistou os voluntários. Apesar das dificuldades, Rex nunca perdeu a esperança
           e estava sempre pronto para abanar o rabo para quem se aproximasse.<br><br>
           Foi em um evento de adoção que sua vida mudou. Mariana e sua família buscavam um cão companheiro para alegrar
@@ -69,7 +72,7 @@
         <img src="../img/WhatsApp Image 2025-03-18 at 21.04.54.jpeg" alt="gato">
       </div>
       <div>
-        <p class="font_p">Mingau foi encontrado sozinho, miando baixinho, perto de uma escola. Pequeno e curioso, ele logo chamou a
+        <p class="font_p font_p">Mingau foi encontrado sozinho, miando baixinho, perto de uma escola. Pequeno e curioso, ele logo chamou a
           atenção de um voluntário da ACAPRA, que o resgatou e garantiu os cuidados necessários. Com o tempo, ele
           mostrou sua personalidade brincalhona e seu amor por janelas, onde adorava observar o movimento lá
           fora.<br><br>
@@ -88,9 +91,9 @@
   <footer class="footer">
     <div class="footer_container">
       <div class="footer_img">
-        <img src="../img/LogoAcapraRoxo.png" alt="logoacapra" class="footer_img1">
+        <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1">
 
-        <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram_logo_thin_icon_171701.png"
+        <a href="https://www.instagram.com/acaprabrusquesc/" target="_blank"><img src="/assets/img/instagram_logo_thin_icon_171701.png"
             alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
             class="footer_img_instagram"></a>
       </div>
@@ -102,8 +105,6 @@
           <p>Nome: Kelly Caroline de Menezes</p>
           <br>
           <p>Telefone: (11) 1234-5678</p>
-          <br>
-          <p>Localização dos animais: Lares temporários</p>
 
         </div>
         <div class="footer_contato_form">
@@ -126,9 +127,9 @@
   <footer class="footerMobile">
     <div class="footer_containerMobile">
       <div class="footer_img">
-        <img src="../img/LogoAcapraRoxo.png" alt="logoacapra" class="footer_img1Mobile">
+        <img src="/assets/img/logoacapraroxa.png" alt="logoacapra" class="footer_img1Mobile">
 
-        <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram_logo_thin_icon_171701.png"
+        <a href="https://www.instagram.com/acaprabrusquesc/" target="_blank"><img src="/assets/img/instagram_logo_thin_icon_171701.png"
             alt="Instagram logo featuring a minimalist design with a thin outline of a camera, conveying a modern and sleek aesthetic"
             class="footer_img_instagram"></a>
       </div>
@@ -147,20 +148,17 @@
           <p>Nome: Kelly Caroline de Menezes</p>
           <br>
           <p>Telefone: (11) 1234-5678</p>
-          <br>
-          <p>Localização dos animais: Lares temporários</p>
 
         </div>
       </div>
-      <br>
       <hr class="footer_lineMobile">
-      <br>
       <div class="footer_copyMobile">
         <p>&copy; 2025 Associação brusquense de proteção aos animais - ACAPRA . All Rights Reserved.</p>
       </div>
       <br><br>
     </div>
   </footer>
+
 </body>
 
 </html>

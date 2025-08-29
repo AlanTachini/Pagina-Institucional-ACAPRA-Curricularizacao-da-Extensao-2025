@@ -2,6 +2,7 @@
 
 /* donation */
 .ContainerPrincipal {
+    margin-top: 120px;
     padding-inline: 80px;
 }
 
@@ -9,6 +10,10 @@
     .ContainerPrincipal {
         padding-inline: 16px !important;
     }
+}
+
+.space-grotesk-h1{
+    font-size: 2rem;
 }
 
 .adopted h1 {

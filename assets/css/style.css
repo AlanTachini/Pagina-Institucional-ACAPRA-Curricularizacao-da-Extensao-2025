@@ -1,140 +1,203 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: space-grotesk, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
+}
+body, .ContainerPrincipal, main {
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
-
-/* Mobile: até 768px */
-@media (max-width: 768px) {
-    .space-grotesk-h1 {
-        font-size: 40px !important;
-    }
-
-    .space-grotesk-h3 {
-        font-size: 16px !important;
-    }
+a {
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
-.space-grotesk-h1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 60px;
-    font-weight: 500;
+main {
+  padding-top: 60px; 
 }
 
-.color-black {
-    color: black;
-}
-
-.padding-inline-80 {
-    padding-inline: 80px;
-}
-
-.space-grotesk-thin {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.space-grotesk-h3 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.padding-16 {
-    padding: 16px;
-}
-
-.padding-24 {
-    padding: 24px;
-}
-
-/* header */
-
-.header{
-    align-items: center;
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    margin: 0 !important;
+    padding-inline: 5%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; 
+    background-color: white;
     color: #2C2046 !important;
-    margin-inline: 78px;
     font-size: 1.1rem;
-    margin-bottom: 60px;
+    z-index: 100;
 }
 
-.header_img{
-    width: 80px;
-    height: 20px;
+.header_img1 {
+        width: 70px;
 }
 
-.nav_list{
+/* NAV LIST */
+.nav_list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.nav_item{
+.nav_item {
     display: flex;
+    font-size: 1rem;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-out;
 }
 
-.nav_item:hover{
+.nav_item:hover {
     cursor: pointer;
     background: #555086;
     color: white;
     border-radius: 5px;
-    outline: 2px solid #555086;
-    padding: 10px 20px;
-    transition: all 0.3s ease-out;
-
 }
 
-.nav_item-buttom{
-
+/* BOTÃO */
+.nav_item-buttom {
     border: 2px solid #2C2046;
     border-radius: 5px;
     padding: 10px 20px;
     align-items: center;
-
 }
 
-.nav_item a:visited, .nav_item-buttom a:visited {
-    color: inherit; 
+/* MENU HAMBURGER */
+.menu-item {
+    display: none;
 }
+
+/* RESPONSIVO */
+@media (max-width: 1000px) {
+
+    main {
+    padding-top: 100px; 
+    }
+
+    .menu-item {
+        display: block;
+        font-size: 1.7rem;
+        padding: 5px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .header_img1 {
+        width: 70px;
+    }
+
+    .nav_list {
+        position: fixed;
+        top: 100px;              
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px); 
+        padding: 20px;
+        display: none; /* só aparece quando o JS ativa */
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav_item {
+        font-size: 1rem;
+        margin: 0 auto;
+        width: fit-content; 
+    }
+
+    .nav_item:hover {
+        padding: 10px 20px;
+    }
+}
+
+
 
 /* divisão */
-.divi_img{
+.divi_img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline: 78px;
-    margin-top: 5% !important;
-    height: 60px;
     margin: 0 auto;
+    width: 80%;
 }
 
+.divi_img img {
+      /* ajuste o valor conforme o tamanho desejado */
+    width: 75%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
 
+}
+
+/* seção introdução */
+.SecaoIntroducao {
+    margin-top: 120px; /* ajuste conforme a altura real do seu header */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+}
+
+/* não aos maus tratos */
+.sayno {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* noticias */
+.notice {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.notice h1{
+    font-size: 2rem !important;
+}
+
+/* perguntas frequentes */
+.accordion {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+/* perguntas frequentes título */
+.questionFrequentl {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.questionFrequentl{
+    font-size: 2rem !important;
+}
 /* footer */
 
 .footer{
-    margin-inline: 78px;
+    margin: 0 !important;
     background-color: #2C2046 !important;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    padding: 0px 88px !important;
+    padding: 0px 5% !important;
     color: white ;
-    
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .footer_img{
@@ -155,13 +218,13 @@
 .footer_copy{
     color: white;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
 }
 
 .footer_contato{
     display: flex;
-    justify-content: center; ;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-top: 1% !important;
@@ -170,7 +233,9 @@
 
 .footer_contato_form{
     display: flex;
-    gap: 20px !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
     background-color: #292A32;
     padding: 7%;
     text-align: center !important;
@@ -182,41 +247,48 @@
 .footer_contato_text-contato{
     text-align: center;
     background: #7B58C2 ;
-    width: 40%;
     padding: 5px 5px;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
-.footer_contato_form-form-input{
-
+.footer_contato_form-form-input {
     background: #292A32;
-    margin-right: 16px;
     border: 2px solid white;
     border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 30px;
-
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 260px;
+    box-sizing: border-box;
+    height: 40px; /* altura menor */
 }
 
-.footer_contato_form-form-button{
-    text-align: center;
-    justify-content: center;
+.footer_contato_form-form-button {
     background: #7B58C2;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    max-width: 100%;
-    padding: 30px; 
+    width: 100%;
+    max-width: 260px;
+    padding: 10px 0;
+    margin-top: 4px;
+    transition: background 0.2s;
+    height: 40px; /* altura menor */
+}
 
+.footer_contato_form-form-button:hover {
+    background: #5a3e8c;
 }
 
 .footer_contato_text{
     color: white;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .footerMobile{
@@ -229,11 +301,14 @@
     }
     .footerMobile{
     display: block;
+    margin: 0 !important;
     background-color: #2C2046 !important;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    padding: 0px 88px !important;
+    padding: 0px 5% !important;
     color: white ;
+    margin-left: 5%;
+    margin-right: 5%;
     }
 
     .footer_containerMobile{
@@ -250,11 +325,12 @@
     .footer_contato_formMobile{
         margin: 0 auto;
         background-color: #292A32;
-        max-width: 320px;
+        max-width: 95vw;      /* Deixa quase toda a largura da tela */
         width: 100%;
-        padding: 24px 20px;
+        padding: 24px 5vw;    /* Padding proporcional à largura */
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         border-radius: 10px;
     }
@@ -265,6 +341,7 @@
         border-radius: 5px;
         margin-bottom: 20px;
         max-width: 100%;
+        color:white;
 
     }
 
@@ -282,15 +359,46 @@
     display: block;
     }
 
-    .footer_contato_form-form-inputMobile,
-.footer_contato_form-form-buttonMobile {
-    padding: 10% 10%;
-    width: 100%;
-    max-width: 300px;
+.footer_contato_formMobile {
+    background-color: #292A32;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
     box-sizing: border-box;
     margin: 0 auto;
-    display: block;
 }
+
+.footer_contato_form-form-inputMobile,
+.footer_contato_form-form-buttonMobile {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.footer_contato_form-form-inputMobile {
+    background-color: #292A32;
+    border: 2px solid white;
+    color: white;
+}
+
+.footer_contato_form-form-buttonMobile {
+    background-color: #7B58C2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.footer_contato_form-form-buttonMobile:hover {
+    background-color: #5a3e8c;
+}
+
 
 .footer_contato_text-contatoMobile{
     margin: 0 auto;
@@ -298,8 +406,28 @@
     width: 150px;
     padding: 5px 5px;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 30px !important;
 }
+}
 
+
+/* Acordeão */
+.accordion-button {
+    color: black !important;
+    font-weight: normal; /* sobrescreve o bold */
+    background-color: white !important;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important; 
+    background-color: #f3f0fa !important;
+
+}
+/* Fundo da resposta */
+.accordion-body {
+    background-color: #cdb4fd !important; 
+    color: #2C2046 !important;       
+    font-weight: normal;             
 }
