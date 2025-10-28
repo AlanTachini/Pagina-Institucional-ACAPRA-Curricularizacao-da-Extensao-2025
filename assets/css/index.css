@@ -108,3 +108,12 @@
     display: block;
     border-radius: 16px; /* opcional, para bordas arredondadas */
 }
+
+.carousel-caption {
+    background-color: #ffffffcc;
+    border-radius: 16px;
+}
+
+.sayno p {
+    font-size: 1rem;
+}

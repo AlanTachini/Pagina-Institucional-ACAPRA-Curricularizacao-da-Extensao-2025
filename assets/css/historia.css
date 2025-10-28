@@ -39,6 +39,7 @@
     background-color: var(--color_purple);
     border-radius: 8px;
     padding: 0px 16px 0px 16px;
+    font-size: 1.6rem;
 }
 
 .FlexCenter {
@@ -90,4 +91,8 @@
 .ContainerPrincipal {
     padding-inline: 80px;
     padding-top: 120px;
+}
+
+.ContainerPrincipal p {
+    font-size: 1rem;
 }
