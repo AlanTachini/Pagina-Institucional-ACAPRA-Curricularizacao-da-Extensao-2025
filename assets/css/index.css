@@ -72,6 +72,12 @@
 }
 
 
+
+.centralizarimgmaustratos{
+    display: block;
+    margin: 0 auto;
+}
+
 /* noticias */
 .notice{
     margin-left: 5%;
@@ -101,12 +107,17 @@
 /* carousel */
 .carousel-item img {
     width: 100%;
-    max-width: 1000px;    /* ajuste conforme o tamanho desejado */
+    max-width: 1282px;    /* ajuste conforme o tamanho desejado */
     height: 300px;       /* altura padrão */
     object-fit: cover;   /* mantém o corte proporcional e preenche o espaço */
     margin: 0 auto;
     display: block;
     border-radius: 16px; /* opcional, para bordas arredondadas */
+}
+
+.carouselTamanhoMaximo{
+    max-width: 1282px;
+    margin: 0 auto;
 }
 
 .carousel-caption {
